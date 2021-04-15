@@ -1,0 +1,61 @@
+
+Variables
+
+Una variable es una forma de guardar el valor de algo para usarse despues. Para crear una variable usamos el var, un espacio y el nombre de nuestra variable seguida de un = para asignarle un valor.
+Tenemos tres tipos de variable: var, let y const.
+	var : es la forma mas comun de declarar una variable.
+	let : es similar a var pero se comporta distinto.
+	const : es una variable que no cambia, viene de la palabra "constante".
+
+Strings
+
+Son bloques de texto definidos entre comillas "", cualquier dato entre comillas se considera un string o cadena.
+
+Funciones(argumentos, return)
+
+Las funciones son una parte muy importante de cualquier lenguaje de programacion ya que son las que hacen algo con las variables que creamos o tengamos a nuestra disposicion. Las funciones son objetos invocables "callable objects", significa que podes "llamarla" para utilizar lo que hace. 
+El metodo mas comun para hacer una funcion es: 
+	function miFuncion(){} 
+Una funcion siempre empieza con la palabra clave function ya que esto le indica al programa que estas usando que lo que sigue es una funcion y funciona como tal, luego se pone el nombre de la funcion (algo simple y claro de lo que hace la funcion). Siguen un par de parentesis donde se le pasan argumentos o varaibles(cuando son varias se separan con una coma) con datos para utilizar en la funcion(dependiendo de tu funcion no es 100% necesario poner un argumento para que funcione). y finalmente un par de corchetes que entre ellos ira todo el codigo de la funcion.
+	function saludo(){
+		console.log("hola :) !")
+	}
+o
+	function saludo(nombre, apellido){
+		console.log("Hola, " + nombre + " " + apellido)
+		(en este caso le agregas un espacio entre nombre y apellido para que no salgan pegados o en la variable apellido le incorporas el espacio al comienzo)
+	}
+
+	Argumentos
+
+Como mostre en el ejemplo anterior cuando agregamos unas variables a los parentesis, podremos usar estos en la función.
+
+	Return
+
+No vamos a usar console.log con todo lo que salga de una función, vamos a querer delvolver algo por ejemplo la suma de dos numeros. Para ello vamos a usar la declaracion de retorno ("return") como la unica forma en que los datos salgan de una funcion y ahi se detenga la funcion y salga.
+
+function sumar (a, b){
+	var suma = a +b;
+	return suma;
+}
+
+
+Declaraciones if
+
+Vamos a utilizar operadores de control de flujo y comparacion, es una forma de que nuestra funcion verifique si algo es "true" y sea ejecutado el codigo dado si es asi o avanzar si no lo es. Para esto usamos la palabra clave "if":
+
+function esMayor (edad){
+	if (edad > 18){
+		return true;
+	}
+	return false;
+}
+
+Como podemos ver estamos tomando un numero (edad) y verificando si la declaracion es true (25>18), lo es, entonces devolvemos true y se detiene la funcion. De no ser asi, omitira ese codigo y la funcion devuelve false.
+
+
+
+Valores Booleanos(true, false)
+
+Es un concepto con dos opciones verdadero "true" o falso "false", que se puede aplicar en varias cosas como en variable o en funciones. Es un concepto muy util y simple pero a su vez se puede volver complicado si no se usa correctamente.
+
